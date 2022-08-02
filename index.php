@@ -8,6 +8,7 @@
     echo '<input type="text" name="" id="">';
 
     
+    //// Variable
     $text = "hello wale";
     $text2 = "hello world";
     $number = 15;
@@ -15,6 +16,15 @@
     echo '<br>';
     echo $number;
     echo '<br>';
+
+    
+    // // Concatination
+    $day = 'Friday';
+    $date = 24;
+    $year = 2000;
+    echo 'The date is <strong>'.$day.' '.$date.' '.$year.'</strong>';
+    echo '<br>';
+    echo "The date is $day $date $year";
 
 
 ?>
