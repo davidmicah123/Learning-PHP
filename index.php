@@ -26,6 +26,13 @@
     echo '<br>';
     echo "The date is $day $date $year";
 
+    
+    //// If else statment
+    if (0) {
+         echo 'True';
+    }else {
+         echo 'False';
+    }
 
 ?>
 
