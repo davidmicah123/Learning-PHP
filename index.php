@@ -34,6 +34,17 @@
          echo 'False';
     }
 
+    
+    // // If else if
+    $number = 11;
+    if($number == 10){
+        echo 'Equal to ten';
+    }else if ($number == 11) {
+        echo 'Eqal to eleven'; 
+    }else {
+        echo 'Not equal';
+    }
+
 ?>
 
 <!-- Embing php value into html -->
