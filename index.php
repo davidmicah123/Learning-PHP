@@ -45,6 +45,16 @@
         echo 'Not equal';
     }
 
+
+    // Assignment Operatior
+    $number1 = 10;
+    $number1 += 3;
+    echo $number1;
+    $text = 'Hello';
+    $text .= 'World';
+    echo $text;
+
+
 ?>
 
 <!-- Embing php value into html -->
