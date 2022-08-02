@@ -7,6 +7,15 @@
     echo "<input type=\"text\" name=\"\" placeholder=\"php boss\" id=\"\">";
     echo '<input type="text" name="" id="">';
 
+    
+    $text = "hello wale";
+    $text2 = "hello world";
+    $number = 15;
+    echo  $text2;
+    echo '<br>';
+    echo $number;
+    echo '<br>';
+
 
 ?>
 
