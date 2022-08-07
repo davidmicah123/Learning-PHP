@@ -91,6 +91,37 @@
     echo $result2;
     
     echo "<br>";
+
+$operand1++;
+    echo $operand1;
+    
+    echo "<br>";
+
+    $operand2--;
+    echo $operand2;
+
+    Logical operator
+    $number  = 520;
+    $upper = 1000;
+    $lower = 500;
+
+    if ($number >= $lower && $number <= $upper) {
+        echo 'Between the range';
+    }else {
+        echo "Number must be between $lower and $upper inclusive";
+    }
+
+    echo "<br>";
+
+    $num1 = 6;
+    $canbe1 = 2;
+    $canbe2 = 4;
+    if (!($num1 == $canbe1) && !($num1 == $canbe2)) {
+        echo "OK!";
+    }else {
+        echo "Not OK!";
+    }
+
 ?>
 
 <!-- Embing php value into html -->
