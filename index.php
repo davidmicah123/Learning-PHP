@@ -64,6 +64,33 @@
         echo 'No';
     }
 
+
+
+    echo "<br>";
+
+    $password = 'password';
+    if ($password == 'password') {
+        echo 'correct';
+    }else{
+        echo 'wrong';
+    }
+
+    // Arithmetic operators 
+    $sum = 10 / 20;
+    echo $sum;
+    $operand1 = 100;
+    $operand2 = 50;
+    $operand3 = 2;
+
+    $result = ($operand1 + $operand2) / $operand3;
+    echo $result;
+
+    echo "<br>";
+    
+    $result2 =  $operand1 % 3;
+    echo $result2;
+    
+    echo "<br>";
 ?>
 
 <!-- Embing php value into html -->
