@@ -92,7 +92,7 @@
     
     echo "<br>";
 
-$operand1++;
+    $operand1++;
     echo $operand1;
     
     echo "<br>";
@@ -120,6 +120,38 @@ $operand1++;
         echo "OK!";
     }else {
         echo "Not OK!";
+    }
+
+    // Tripple equal to
+    $num1 = '1';
+    $num2 = 1;
+
+    if ($num1 === $num2) {
+        echo 'Equal!';
+    }else {
+        echo 'Not equal';
+    }
+
+
+    // Loops
+    // While loop
+    $counter = 1;
+
+    while ($counter <= 10) {
+        echo $counter.' Hello <br>';
+        $counter++;
+    }
+
+    // Do while loop
+    $counter2 = 1;
+    do{
+        echo 'This will always show once <br>';
+        $counter2++;
+    }while($counter2 <= 10);
+
+    For loop
+    for ($count = 1; $count <= 10; $count++) {
+        echo $count."<br>";
     }
 
 ?>
