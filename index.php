@@ -123,6 +123,32 @@ $operand1++;
     }
 
 ?>
+<!-- <h1>welcome</h1> --> 
+
+<form action="index.php" method="post">
+    <input type="submit" value="roll dice" name="roll">
+</form>
+
+<form action="index.php" method="post">
+    <textarea name="text" id="" cols="30" rows="7"></textarea><br><br>
+    Search for: <br>
+    <input type="text" name="search_for"><br><br>
+    Replace with: <br>
+    <input type="text" name="replace_with"><br><br>
+    <input type="submit" value="submit">
+</form>
 
 <!-- Embing php value into html -->
-<!-- <input type="text" name="" value="<?php echo $text; ?>"> -->
+<input type="text" name="" value="<?php echo $text; ?>">
+
+<form action="index.php" method="get">
+    Name: <input type="text" name="user_name" id=""><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<form action="index.php" method="post">
+    <textarea name="user_input" id="" cols="30" rows="5"></textarea> <br><br>
+    <input type="submit" value="submit">
+</form>
