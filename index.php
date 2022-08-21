@@ -231,6 +231,59 @@
     $sum = divide(add(10, 10), add(5, 5));
     echo $sum;
 
+    // GLobal variable
+    $user_ip = $_SERVER['REMOTE_ADDR'];
+    
+    function echo_ip(){
+        global $user_ip;
+        $string = 'Your IP address is '.$user_ip;
+        echo $string;
+    }
+    echo_ip()
+    
+    String functions
+    $string = "This is an example string";
+    // Word count function
+    $string_word_count = str_word_count($string, 0, '.&!');
+    // print_r($string_word_count);
+    echo ($string_word_count);
+
+    echo '<br>';
+
+    // Shuffle function => shufles string
+    $string_shuffled = str_shuffle($string);
+    echo $string_shuffled;
+
+    // Sunstring =>  
+    $sub_string = substr($string_shuffled, 0, strlen($string)/2);
+    echo $sub_string;
+
+    // Reverse => reversing a string
+    $str_reversed = strrev($string);
+    echo $str_reversed;
+
+    echo '<br>';
+
+    //similar_text => Calculating string similarity in prcentage
+    $string1 = "This is my essay i am going to be talking about PHP.";
+    $string2 = "This is my essay i am will to be talking about PHP.";
+    similar_text($string1, $string2, $result);
+    echo 'The similarity between both essay is '.$result.'%';
+
+    echo '<br>';
+
+    // String length => strlen()
+    $string_length = strlen($string);
+    echo $string_length;
+
+    echo '<br>';
+
+    // Trim, lthrim = left thrim, rthrim = right thrim;
+    $string_thrimed = trim($string);
+    echo $string_thrimed;
+
+    echo '<br>';
+
 ?>
 <!-- <h1>welcome</h1> --> 
 
