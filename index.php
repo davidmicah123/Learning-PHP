@@ -383,6 +383,53 @@
     // echo $string_upper;
 
 
+    if (isset($_GET['user_name']) && !empty($_GET['user_name'])) {
+        $user_name = $_GET['user_name'];
+        $user_name_lc = strtolower($user_name);
+        if ($user_name_lc=='alex') {
+            echo 'You are the best, '.$user_name; 
+        }
+    }
+
+
+    String position: strpos();
+    $offset = 0;
+    $find = 'is';
+    $find_len = strlen($find);
+    $string = 'This is a string and it is an example';
+    // echo strpos($string, $find, 10);
+
+    while ($string_position = strpos($string, $find, $offset)) {
+        echo '<strong>'.$find.'</strong>'.' found at '.$string_position.'<br>';
+        $offset = $string_position + $find_len;
+    }
+
+    // substr_replace(): Replacing a part of a string
+    $string = 'This part don\'t search. This part search';
+    $string_new = substr_replace($string, 'alex', 29, 4);
+    echo $string_new;
+
+    str_replace() : replace a word with another
+    $find = array('is', 'string', 'example');
+    $replace = array('IS', 'STRING', 'EXAMPLE');
+    $string = 'This is a string and is an example';
+    $new_string = str_replace($find, $replace, $string);
+    echo $new_string;
+
+    str_ireplace => not case sensitive
+
+    $find = array('alex', 'billy', 'dale');
+    $replace = array('a**x', 'b***y', 'd**e');
+
+    if (isset($_POST['user_input']) && !empty($_POST['user_input'])) {
+        $user_input = $_POST['user_input'];
+        $user_input_low = strtolower($user_input);
+
+        $user_input_new = str_ireplace($find, $replace, $user_input_low);
+
+        echo $user_input_new;
+
+    }
 ?>
 <!-- <h1>welcome</h1> --> 
 
