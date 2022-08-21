@@ -507,6 +507,32 @@
             die('Your ip address, '.$ip. ' has been blocked');
         }
     }
+
+
+    // Blocking ip: reliable and important
+    $http_client_ip = $_SERVER['HTTP_CLIENT_IP'];
+    $http_x_foworded_for = $_SERVER['HTTP_X_FOWARDED_FOR'];
+    $remote_addr = $_SERVER['REMOTE_ADDR'];
+
+    if (!empty($http_client_ip)) {
+        $ip_address = $http_client_ip;
+    }elseif (!empty($http_x_foworded_for)) {
+        $ip_address = $http_x_foworded_for;
+    }else {
+        $ip_address = $remote_addr;
+    }
+
+    echo $ip_address;
+
+
+    // Getting user browser details 
+    $browser = get_browser(null, true);
+    $browser = strtolower($browser['browser']);
+    // echo $browser;
+
+    if ($browser != "chrome") {
+        echo "You're not using doogle chrome, pleade do";
+    }
 ?>
 <!-- <h1>welcome</h1> --> 
 
