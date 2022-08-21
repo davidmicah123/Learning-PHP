@@ -284,6 +284,57 @@
 
     echo '<br>';
 
+
+    // addslashes() => security purpose, strip slashes
+    $slash = 'This is a <img src="image.jpg"> string';
+    $string_slashes = htmlentities(addslashes($slash));
+    echo $string_slashes;
+
+    echo '<br>';
+
+    echo stripcslashes($string_slashes);
+
+
+    Arrays
+    $food = array('Pasta', 'Pizza', 'Salad'); 
+    print_r($food);
+    $food[4] = 'Fruit';
+    echo '<br>';
+    print_r($food);
+    echo '<br>';
+    
+    echo $food[1];
+    
+    Associative array => allows you to define your own key
+    $food = array('Pasta'=>300, 'Pizza'=>700, 'Salad'=>150, 'Vegetable'=>250); 
+    print_r($food);
+    
+    echo '<br>';
+
+    echo $food['Vegetable'];
+
+
+    // Multi dimensionsl array
+    $caategories = array('Healthy'=>
+                            array('Salad', 'Vegetable', 'pasta'), 
+                        'unhealthy'=>
+                            array('Pizza', 'Ice cream', 'Pop-corn'));
+
+    // echo $caategories['unhealthy'][1];
+
+    // FOr each construct/loop
+    foreach($caategories as $element => $inner_array){
+        echo '<strong>'.$element.'<br>'.'</strong>';
+        foreach ($inner_array as $item) {
+            echo $item.'<br>';
+        }
+    }
+
+    Include and require Function, require: kill page if included/imported page does not exixt, handles error in a better way
+    require 'practice.php';
+    $var = "String";
+    echo $var1;
+
 ?>
 <!-- <h1>welcome</h1> --> 
 
