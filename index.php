@@ -481,7 +481,32 @@
     // $scrip_name = $_SERVER['SCRIPT_NAME'];
     // echo $scrip_name;
 
-    
+
+    if (isset($_POST['submit'])) {
+        echo 'Process 1';
+    }
+
+    $host = $_SERVER['HTTP_HOST'];
+    $images = $host.'/images';
+
+
+    // Header function
+    $redirect_page = "http://google.co.uk";
+    $redirect = true;
+    if ($redirect == true) {
+        header('Location:'.$redirect_page);
+    }
+
+    ob_end_flush();
+
+    // Blocking user IP: not reliable
+    require 'test.php';
+    // echo $ip_address;
+    foreach ($ip_blocked as $ip) {
+        if ($ip = $ip_address) {
+            die('Your ip address, '.$ip. ' has been blocked');
+        }
+    }
 ?>
 <!-- <h1>welcome</h1> --> 
 
