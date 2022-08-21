@@ -154,6 +154,83 @@
         echo $count."<br>";
     }
 
+    // Switch statment 
+    $number = 4;
+    switch ($number){
+        case 1:
+            echo 'One';
+        break;
+        case 2: 
+            echo 'Two';
+        break;
+        case 3: 
+            echo 'Three';
+        break;
+        default:
+            echo 'Number not found';
+        break;
+    }
+
+    $day = 'Sunday';
+    switch ($day) {
+        case 'Saturday':
+        case 'Sunday':
+            echo "Its a weekend";
+        break;
+        default: 
+            echo('Not a weekend');
+        break;
+    }
+
+
+
+
+    // Die and Exit function
+    echo 'Hello ';
+    echo "<br>";
+    // die('Debugging using die function');
+    
+    echo ' World';
+    echo "<br>";
+
+    // Connecting to Database
+    @mySql_connect('localhost', 'Dell PC', '') or die('Cound not connect to Database');
+
+    echo 'connected';
+
+    Function
+    function MyName(){
+        echo "David";
+    }
+    echo 'My name is ';
+    MyName();
+
+    echo "<br>";
+
+    $inumber1 = 10;
+    $inumber2 = 5;
+    function add($number1, $number2){
+        echo $number1 + $number2;
+    }
+    add($inumber1, $inumber2);
+    
+    function displayDate($day, $date, $year){
+        echo $day.' '.$date.' '.$year;
+    }
+    echo "<br>";
+    displayDate('Sunday', 07, 2022);
+    
+    function add($number1, $number2){
+        $result = $number1 + $number2;
+        return $result;
+    }
+    function divide($number1, $number2){
+        $result = $number1 / $number2;
+        return $result;
+    }
+    $sum = divide(add(10, 10), add(5, 5));
+    echo $sum;
+
 ?>
 <!-- <h1>welcome</h1> --> 
 
