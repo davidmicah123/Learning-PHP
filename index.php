@@ -430,6 +430,58 @@
         echo $user_input_new;
 
     }
+
+
+    // substr_replace
+    $offset = 0;
+    if (isset($_POST['text']) && isset($_POST['search_for']) && isset($_POST['replace_with'])) {
+        $text = $_POST['text'];
+        $search = $_POST['search_for'];
+        $replace = $_POST['replace_with'];
+
+        $search_length = strlen($search);
+
+        if (!empty($text) && !empty($search) && !empty($replace)) {
+
+            while ($strpos = strpos($text, $search, $offset)) {
+                $offset = $strpos + $search_length;
+
+                $text = substr_replace($text, $replace, $strpos, $search_length);
+                echo $text;
+            }
+
+        }else{
+            echo 'Fill out all fields';
+        }
+    }
+
+    // Time stamp
+    $actual_time  = date('H:i:s', $time);
+    Strtotime() convert string to time
+    $time = time();
+    
+    $time_now  = date('d M Y @ H:i:s', $time);
+    // $time_modified  = date('d M Y @ H:i:s', strtotime('+1 week 2 hours 30 seconds'));
+    $time_modified  = date('d M Y @ H:i:s', $time-(7*84*3*30));
+    echo "The time now is $time_now <br> The time modified is $time_modified";
+
+    Random number generator rand();
+
+    $rand = rand();
+    $max = getrandmax();
+
+
+    if (isset($_POST['roll'])) {
+        $rand = rand(1, 6);
+        echo 'you rolled a '.$rand;
+    }
+
+    // SERVER
+    include 'practice.php';
+    // $scrip_name = $_SERVER['SCRIPT_NAME'];
+    // echo $scrip_name;
+
+    
 ?>
 <!-- <h1>welcome</h1> --> 
 
