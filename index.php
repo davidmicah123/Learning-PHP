@@ -335,6 +335,54 @@
     $var = "String";
     echo $var1;
 
+
+    // include_once and require_once => checkd if page has been included if no the it includes else it does not require twice
+    require 'practice.php';
+    require_once 'practice.php';
+
+    Expression matching: "Preg_match" chcking for pattern inside a string
+    $string = 'This is a string';
+
+    if(preg_match('/ /', $string)){
+        echo 'Match found';
+    }else{
+        echo 'No match founc';
+    }
+
+
+    function has_space($string){
+        if(preg_match('/ /', $string)){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    $string = 'This has no space';
+
+    if(has_space($string)){
+        echo 'Has at least one space';
+    }else{
+        echo 'Has no spaces.';
+    }
+
+    String function: string length
+    $string = "David";
+    $string_length = strlen($string);
+    // echo $string_length;
+
+
+    for ($x=1; $x <= $string_length ; $x++) { 
+        echo $x.'<br>';
+    }
+
+    Upper and lowercas conversion function
+    $string = 'I can BE any case';
+    $string_lower = strtolower($string);
+    $string_upper = strtoupper($string);
+    // echo $string_lower;
+    // echo $string_upper;
+
+
 ?>
 <!-- <h1>welcome</h1> --> 
 
