@@ -1,0 +1,26 @@
+<producers>
+    <producer>
+        <name>David</name>
+        <age>15</age>
+        <show>
+            <showname>A show</showname>
+            <showdate>12th december 2020</showdate>
+        </show>
+        <show>
+            <showname>another show</showname>
+            <showdate>1st january 2021</showdate>
+        </show>
+        <show>
+            <showname>another show 2</showname>
+            <showdate>5th july 2022</showdate>
+        </show>
+    </producer>
+    <producer>
+        <name>Billi</name>
+        <age>20</age>
+        <show>
+            <showname>Billys show</showname>
+            <showdate>7th april 2010</showdate>
+        </show>
+    </producer>
+</producers>
