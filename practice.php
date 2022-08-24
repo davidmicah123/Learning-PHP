@@ -60,3 +60,21 @@
     }
 
 ?>
+
+<!-- <form action="<?php echo $script_name?>" method="post">
+    <input type="submit" value="submit" name="submit">
+</form> -->
+
+<form action="welcome.php" method="post">
+    Username: <input type="text" name="username" id="" autocomplete="off"> <br><br>
+    Password: <input type="password" name="password" autocomplete="off"> <br> <br>
+    <input type="submit" value="sublit">
+</form>
+
+
+<form action="practice.php" method="post">
+    <textarea name="text" id="" cols="35" rows="7"></textarea> <br> <br>
+    <input type="text" name="search" id="" placeholder="search"> <br> <br>
+    <input type="text" name="replace" id="" placeholder="replace"> <br> <br>
+    <input type="submit" value="search and replace">
+</form>
