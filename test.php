@@ -36,3 +36,25 @@
 
 
 ?>
+
+
+
+<form action="test.php" method="get">
+    Day: <br> <input type="text" name="Day"> <br>
+    Date: <br> <input type="text" name="date"> <br>
+    Year: <br> <input type="text" name="year"> <br> <br>
+    <input type="submit" value="submit">
+</form>
+
+
+<form action="test.php" method="post">
+    Password: <br> <input type="password" name="password" id=""><br><br>
+    <input type="submit" value="submit">
+</form>
+
+<form action="test.php" method="get">
+    Day: <br><input type="text" name="day" id=""> <br>
+    Date: <br><input type="text" name="date" id=""> <br>
+    Year: <br><input type="text" name="year" id=""><br> <br>
+    <input type="submit" value="submit">
+</form>
