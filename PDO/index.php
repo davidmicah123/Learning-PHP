@@ -80,4 +80,43 @@
     // $author = 'David';
 
 
+    // $sql = "INSERT INTO post(Title, Body, Author) VALUES(:Title, :Body, :Author)";
+    // $stmt = $pdo->prepare($sql);
+    // $stmt->execute(['Title' => $title, 'Body' => $body, 'Author' => $author]);
+
+    // echo 'post added';
+
+    // // Update data
+    // $id = 1;
+    // $body = 'This is the updated post';
+
+
+    // $sql = "UPDATE post SET body = :Body WHERE id = :id";
+    // $stmt = $pdo->prepare($sql);
+    // $stmt->execute(['Body' => $body, 'id' => $id]);
+
+    // echo 'post updated';
+
+
+    // Delete data
+    // $id = 3;
+
+    // $sql = "DELETE FROM post WHERE id = :id";
+    // $stmt = $pdo->prepare($sql);
+    // $stmt->execute(['id' => $id]);
+
+    // echo 'post deleted';
+
+
+    // Search data
+    // $search = "%f%";
+    // $sql = 'SELECT * FROM post WHERE Title LIKE ?';
+    // $stmt = $pdo->prepare($sql);
+    // $stmt->execute([$search]);
+    // $posts = $stmt->fetchAll();
+
+    // foreach($posts as $post){
+    //     echo $post->Title . '<br>';
+    // }
+
 ?>
