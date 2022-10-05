@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ristore_mode_txt{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
+#search_section{
+    width: 95vw;
+    display: flex;
+    gap: 1vw;
+    margin: 1vh auto;
+}
+.user_input{
+    width: 80vw;
+    font-size: 1.1rem;
+    padding: 1vh;
+}
+.add_task_btn{
+    width: 10vw;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.table{
+    width: 97vw;
+    margin: 2vh auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black;
+    padding: 1vh;
+}
+.stop_btn{
+    background-color: slateblue;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 0.2rem;
+}
+.cancle_btn{
+    background-color: rgb(201, 22, 81);
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 0.2rem;
+    font-weight: bolder;
+}
+
+
+.btn_col{
+    width: 8%;
+}
+.desabled:hover{
+    cursor: not-allowed;
+    background-color: #ccc;
+    opacity: 0.3;
+    visibility: hidden;
+}
